@@ -72,7 +72,7 @@ pipeline{
                }
             }
         }
-        stage('Push JAR to Jfrog : Python){
+        stage('Push JAR to Jfrog : Python'){
          when { expression {  params.action == 'create' } }
             steps{
                script{
